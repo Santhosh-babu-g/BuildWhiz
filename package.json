@@ -1,0 +1,46 @@
+{
+  "name": "buildwhiz",
+  "displayName": "BuildWhiz",
+  "description": "Build your project with a click of a button using apache ant.",
+  "version": "1.0.0",
+  "icon": "icon.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "buildwhiz.build",
+      "title": "Build"
+    }],
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "ant.buildDirectory": {
+          "type": "string",
+          "default": "build",
+          "description": "Specify the path to the directory with build.xml"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8"
+  }
+}
