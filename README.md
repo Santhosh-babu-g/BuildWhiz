@@ -1,65 +1,23 @@
-# buildwhiz README
+# BuildWhiz README
 
-This is the README for your extension "buildwhiz". After writing up a brief description, we recommend including the following sections.
+BuildWhiz helps in simplifying the build creation and deployment process. Our aim is to provide total customizability to the users. Generally, running build commands or writing a shell script for these process is tedious.
+So we thought of creating a extension to use Ant and finish all the build processes within a single click of a button from your IDE.
+
+Overall, this is a UI button to execute the 'ant' command in the current workspace.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Execute ant command and run the processes defined in the build.xml file of your project. Additional Information from the processes will be logged in the debug console of the project.
+You can perform all actions supported by Apache Ant using the build.xml file.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Apache Ant - Please install ant and set it as a environment variable that can be accessed from all directories.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+* `buildwhiz.buildDirectory`: Specify the directory of the build.xml file. By default, it is the 'build' directory under the workspace.
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Thanks for using BuildWhiz!
