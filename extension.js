@@ -61,7 +61,7 @@ function activate(context) {
         }
 
 
-		const antProcess = exec('ant -f build.xml', { cwd: buildPath });
+		const antProcess = exec('ant -f build.xml', { cwd: buildDirectory });
 
 		antProcess.stdout.on('data', (data) => {
             const antOutput = Buffer.from(data).toString(); // Convert Buffer to string
