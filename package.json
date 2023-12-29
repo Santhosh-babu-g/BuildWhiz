@@ -5,6 +5,10 @@
   "version": "1.0.0",
   "icon": "icon.png",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Santhosh-babu-g/BuildWhiz.git"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
