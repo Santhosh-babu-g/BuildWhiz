@@ -1,5 +1,7 @@
 # BuildWhiz README
 
+![Icon](icon.png)
+
 BuildWhiz helps in simplifying the build creation and deployment process. Our aim is to provide total customizability to the users. Generally, running build commands or writing a shell script for these process is tedious.
 So we thought of creating a extension to use Ant and finish all the build processes within a single click of a button from your IDE.
 
